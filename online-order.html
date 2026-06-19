@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Đặt hàng online - Mèn Mén Coffee & Tea">
+  <title>Đặt hàng Online - Mèn Mén Coffee & Tea</title>
+  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="commerce.css?v=4">
+  <link rel="stylesheet" href="styles/order-form.css?v=1">
+</head>
+<body>
+  <div class="site-loader" aria-label="Đang tải Mèn Mén">
+    <span class="loader-orb orb-one"></span><span class="loader-orb orb-two"></span><span class="loader-orb orb-three"></span>
+    <div class="loader-core"><img src="assets/men-men-logo.png" alt=""><span></span></div>
+    <p>Đang đánh thức hương vị...</p>
+  </div>
+
+  <button class="back-button" type="button" aria-label="Quay lại một bước">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>
+  </button>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="icon-btn menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <a class="brand" href="index.html" aria-label="Mèn Mén Coffee & Tea">
+        <span class="brand-logo-frame"><img src="assets/men-men-logo.png" alt="Mèn Mén Coffee & Tea"></span>
+      </a>
+
+      <button class="icon-btn mobile-cart-btn open-cart" type="button" aria-label="Giỏ hàng">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h2l2 10h10l2-7H6"/><circle cx="9" cy="19" r="1"/><circle cx="17" cy="19" r="1"/></svg>
+        <span class="cart-count">0</span>
+      </button>
+
+      <nav class="desktop-nav" aria-label="Điều hướng chính">
+        <a href="index.html" data-i18n="nav.home">Trang chủ</a>
+        <a href="menu.html" data-i18n="nav.menu">Thực đơn</a>
+        <a class="active" href="online-order.html" data-i18n="nav.order">Đặt hàng Online</a>
+        <a href="story.html" data-i18n="nav.story">Câu chuyện của chúng tôi</a>
+        <a href="locations.html" data-i18n="nav.locations">Địa điểm</a>
+        <a href="login.html" data-i18n="nav.login">Đăng nhập</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-switcher" aria-label="Chọn ngôn ngữ">
+          <button class="lang-btn active" type="button" data-lang="vi">VI</button>
+          <button class="lang-btn" type="button" data-lang="zh">中文</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </div>
+        <button class="icon-btn search-toggle" type="button" aria-label="Tìm kiếm">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+        </button>
+        <a class="icon-btn account-btn" href="login.html" aria-label="Tài khoản">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 20c.7-4 3-6 6.5-6s5.8 2 6.5 6"/></svg>
+        </a>
+        <button class="icon-btn cart-btn open-cart" type="button" aria-label="Giỏ hàng">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h2l2 10h10l2-7H6"/><circle cx="9" cy="19" r="1"/><circle cx="17" cy="19" r="1"/></svg>
+          <span class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" aria-hidden="true">
+      <nav aria-label="Điều hướng mobile">
+        <a href="index.html" data-i18n="nav.home">Trang chủ</a>
+        <a href="menu.html" data-i18n="nav.menu">Thực đơn</a>
+        <a href="online-order.html" data-i18n="nav.order">Đặt hàng Online</a>
+        <a href="story.html" data-i18n="nav.story">Câu chuyện của chúng tôi</a>
+        <a href="locations.html" data-i18n="nav.locations">Địa điểm</a>
+        <a href="login.html" data-i18n="nav.login">Đăng nhập</a>
+      </nav>
+      <div class="drawer-languages">
+        <button class="lang-btn active" type="button" data-lang="vi">Tiếng Việt</button>
+        <button class="lang-btn" type="button" data-lang="zh">中文</button>
+        <button class="lang-btn" type="button" data-lang="en">English</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="order-form-section">
+      <h2>Đặt hàng Online</h2>
+      <p class="subtitle">Nhập thông tin giao hàng của bạn để tiếp tục</p>
+
+      <form id="orderForm">
+        <div class="form-group">
+          <h3 class="form-group-title">👤 Thông tin khách hàng</h3>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="fullName">Họ và tên <span class="required">*</span></label>
+              <input type="text" id="fullName" name="fullName" placeholder="Ví dụ: Nguyễn Văn A" required>
+              <div class="error-message"></div>
+            </div>
+            <div class="form-field">
+              <label for="phone">Số điện thoại <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="Ví dụ: 0987654321" required>
+              <div class="error-message"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Ví dụ: email@example.com">
+              <div class="error-message"></div>
+            </div>
+            <div class="form-field">
+              <label for="contactNote">Ghi chú liên hệ</label>
+              <input type="text" id="contactNote" name="contactNote" placeholder="Ví dụ: Gọi trước khi đến">
+              <div class="error-message"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <h3 class="form-group-title">📍 Địa chỉ giao hàng</h3>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="deliveryCity">Tỉnh/Thành phố <span class="required">*</span></label>
+              <select id="deliveryCity" name="deliveryCity" required>
+                <option value="">-- Chọn tỉnh/thành phố --</option>
+              </select>
+              <div class="error-message"></div>
+            </div>
+            <div class="form-field">
+              <label for="deliveryDistrict">Quận/Huyện <span class="required">*</span></label>
+              <select id="deliveryDistrict" name="deliveryDistrict" disabled required>
+                <option value="">-- Chọn quận/huyện --</option>
+              </select>
+              <div class="error-message"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="deliveryWard">Phường/Xã <span class="required">*</span></label>
+              <select id="deliveryWard" name="deliveryWard" disabled required>
+                <option value="">-- Chọn phường/xã --</option>
+              </select>
+              <div class="error-message"></div>
+            </div>
+          </div>
+
+          <div class="form-row full">
+            <div class="form-field">
+              <label for="streetAddress">Số nhà, tên đường <span class="required">*</span></label>
+              <input type="text" id="streetAddress" name="streetAddress" placeholder="Ví dụ: 123 Đường Lê Lợi" required>
+              <div class="error-message"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="buildingOrArea">Khu dân cư / Chung cư / Tòa nhà</label>
+              <input type="text" id="buildingOrArea" name="buildingOrArea" placeholder="Ví dụ: KDC Việt Sing, Tòa A">
+              <div class="error-message"></div>
+            </div>
+            <div class="form-field">
+              <label for="deliveryNote">Ghi chú giao hàng</label>
+              <input type="text" id="deliveryNote" name="deliveryNote" placeholder="Ví dụ: Gọi chuông tầng 2, lên tầng 3">
+              <div class="error-message"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="deliveryAreaNotice" class="delivery-area-notice"></div>
+
+        <div class="form-group">
+          <h3 class="form-group-title">🗺️ Định vị thông minh (Tùy chọn)</h3>
+          <p style="font-size: 14px; color: #666; margin-bottom: 16px;">Cho phép truy cập vị trí của bạn để giao hàng chính xác hơn.</p>
+
+          <div class="geolocation-container">
+            <div class="form-field" style="flex: 1;">
+              <label for="locationStatus">Trạng thái vị trí</label>
+              <div id="locationStatus" class="location-status" style="margin-top: 0;"></div>
+            </div>
+            <button class="geolocation-btn" id="useGeolocationBtn" type="button">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8m3.5-9c0 1.9-1.6 3.5-3.5 3.5S8.5 12.9 8.5 11 10.1 7.5 12 7.5s3.5 1.6 3.5 3.5"/></svg>
+              📍 Dùng vị trí hiện tại
+            </button>
+          </div>
+        </div>
+
+        <div class="order-form-actions">
+          <button class="submit-btn" type="submit">Đặt hàng</button>
+          <button class="cancel-btn" type="button" onclick="window.history.back()">Hủy</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <div id="orderSuccessModal" class="order-success-modal">
+    <div class="order-success-content">
+      <div class="order-success-header">
+        <div class="order-success-icon">✓</div>
+        <h3>Đặt hàng thành công!</h3>
+        <p>Mèn Mén sẽ liên hệ xác nhận đơn trong ít phút</p>
+      </div>
+
+      <div class="order-details">
+        <div class="detail-row">
+          <span class="detail-label">Mã đơn hàng:</span>
+          <span class="detail-value" id="successOrderId">MM0000000000</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Khách hàng:</span>
+          <span class="detail-value" id="successCustomerName">-</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Điện thoại:</span>
+          <span class="detail-value" id="successPhone">-</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Địa chỉ:</span>
+          <span class="detail-value" id="successAddress">-</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Tổng cộng:</span>
+          <span class="detail-value" id="successTotal">0₫</span>
+        </div>
+      </div>
+
+      <div class="order-success-actions">
+        <button class="success-btn primary call-btn" type="button">📞 Gọi quán</button>
+        <button class="success-btn secondary order-more-btn" type="button">🛒 Đặt thêm món</button>
+        <button class="success-btn secondary home-btn" type="button">🏠 Quay lại trang chủ</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="brand brand-large" href="index.html">
+          <span class="brand-logo-frame footer-logo-frame"><img src="assets/men-men-logo.png" alt="Mèn Mén Coffee & Tea"></span>
+        </a>
+        <p data-i18n="footer.tagline">Từ cao nguyên đến tách cà phê của bạn.</p>
+      </div>
+      <div class="footer-column">
+        <h3 data-i18n="footer.quick">Liên kết nhanh</h3>
+        <a href="index.html" data-i18n="nav.home">Trang chủ</a>
+        <a href="story.html" data-i18n="nav.story">Câu chuyện</a>
+        <a href="locations.html" data-i18n="nav.locations">Địa điểm</a>
+      </div>
+      <div class="footer-column">
+        <h3 data-i18n="footer.menu">Thực đơn</h3>
+        <a href="menu.html" data-i18n="cat.all">Tất cả</a>
+        <a href="menu.html" data-i18n="cat.coffee">Cà phê</a>
+        <a href="menu.html" data-i18n="cat.tea">Trà</a>
+      </div>
+      <div class="footer-column footer-contact">
+        <h3 data-i18n="footer.contact">Thông tin liên hệ</h3>
+        <p>+84 396610088</p>
+        <p>hello@menmencoffee.vn</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">◎</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Mèn Mén Coffee &amp; Tea</span><span data-i18n="footer.rights">Tất cả quyền được bảo lưu.</span></div>
+  </footer>
+
+  <script src="utils/validation.js?v=1"></script>
+  <script src="utils/location.js?v=1"></script>
+  <script src="utils/geolocation.js?v=1"></script>
+  <script src="utils/order.js?v=1"></script>
+  <script src="script-order.js?v=1"></script>
+  <script src="script.js?v=4"></script>
+</body>
+</html>
