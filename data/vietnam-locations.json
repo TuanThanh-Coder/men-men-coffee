@@ -1,0 +1,28 @@
+{
+  "Bình Dương": {
+    "Thuận An": ["Bình Hòa", "An Phú", "Lái Thiêu", "Tân Bình", "Vĩnh Phú", "Phú Chánh"],
+    "Dĩ An": ["Dĩ An", "Tân Đông Hiệp", "An Bình", "Bình Thắng", "Tân Hạnh"],
+    "Bến Cát": ["Tân Vạn", "Tân Thạnh", "Chơn Thạnh", "Lập Thạch", "Hòa Lân"],
+    "Tân Uyên": ["Tân Thành", "Uyên Hưng", "Tân Vạn", "Thái Hòa"],
+    "Tân Châu": ["Tân Tạo", "Hòa Lân", "An Phú", "Tân Định"],
+    "Thủ Dầu Một": ["Phường An Bình", "Phường An Phú", "Phường Bình Thắng", "Phường Hiệp Thành"]
+  },
+  "TP. Hồ Chí Minh": {
+    "Quận 1": ["Bến Nghé", "Đa Kao", "Tân Định", "Nguyễn Huệ", "Cầu Ông Lãnh"],
+    "Quận 2": ["An Phú", "Bình Trưng Đông", "Bình Trưng Tây", "Thảo Điền", "Thủ Thiêm"],
+    "Quận 3": ["Võ Thị Sáu", "Phạm Ngũ Lão", "Cầu Ông Lãnh", "Nguyễn Du", "Tân Định"],
+    "Quận 4": ["Thạnh Xuân", "Phú Thuận", "Tân Phong", "Tân Hưng"],
+    "Quận 5": ["Bình Tây", "Phú Nhuận", "Tân Thành", "Nguyễn Huệ"],
+    "Quận 7": ["Phú Mỹ", "Tân Hưng", "Tân Kiểng", "Tân Quy"],
+    "Quận Thủ Đức": ["Linh Trung", "Linh Tây", "Linh Chiểu", "Hiệp Bình Chánh"]
+  },
+  "Đồng Nai": {
+    "Biên Hòa": ["Phú Hòa", "Hiệp Hòa", "Long Bình", "Quyết Thắng"],
+    "Long Khánh": ["Long Tân", "Long Hương", "Long Sơn"],
+    "Thống Nhất": ["Tân Hội", "Thống Nhất"]
+  },
+  "Long An": {
+    "Tân An": ["Mỹ Hòa", "Tân Phú", "Ấp Bắc"],
+    "Cần Đước": ["Cần Đước", "Phú Tân"]
+  }
+}
